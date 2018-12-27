@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+{% extends "my_app/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+<!-- Automatic Slideshow Images -->
+<div class="mySlides">
+    <img src="{% static 'images/Web-Application.jpeg' %}" style="width:100%">
+</div>
+<div class="mySlides">
+    <img src="{% static 'images/la.jpg' %}" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <img src="{% static 'images/ny.jpg' %}" style="width:100%">
+</div>
+<div class="mySlides">
+    <img src="{% static 'images/sec-cam.jpg' %}" style="width:100%">
+</div>
+<div class="mySlides">
+    <img src="{% static 'images/8Hp2ET.jpg' %}" style="width:100%">
+</div>
+<!-- /Automatic Slideshow Images -->
+
+<div class="jumbotron about_jumbotron">
+    <div class="container about_container">
+        <h1 id="about-h1" class="text-primary">About Najdawi Software</h1>
+        <p id="about-p">Paragraphs are the building blocks of papers. Many students define paragraphs in terms of
+            length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality,
+            though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </div>
+</div>
+
+<div class="container wwd-container">
+    <h1 id="wwd-h1">What We Do ?</h1>
+    <div class="row wwd-row">
+        <div class="col-md-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/1267/1267243.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Research</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/566/566944.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Studies</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/42/42998.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Graduation Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row wwd-row">
+        <div class="col-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/1343/1343174.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Colored Printing</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/34/34100.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Computer Supplies</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="Image" style="text-align: center;">
+                <img src="https://image.flaticon.com/icons/svg/1342/1342026.svg" caption="false" width="60"
+                     height="60" class="service-icon"/>
+                <div class="caption">
+                    <p style="text-align: center;"><br/>Master & Ph.D Letter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div><!-- /wwd-container -->
+
+<div class="container slide_product_container">
+    <div class="card-deck">
+        <div class="card">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 card-img-top" src="{% static 'images/1.png' %}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 card-img-top" src="{% static 'images/1.png' %}"
+                             alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 card-img-top" src="{% static 'images/1.png' %}" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Graduation Bock</h5>
+                <p class="card-text">You can choose one from a variety design of graduation bock.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/led.png' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Electronic Banner</h5>
+                <p class="card-text">You can make your custom banner.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/printers.png' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Print & Go</h5>
+                <p class="card-text">Print fast and go - [Colored / Black & White]</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div><!-- /slide_product_container -->
+
+<!-- Footer -->
+<footer class="page-footer jumbotron">
+    <!-- Footer Elements -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h5>Contact us and we'll get back to you within 24 hours.</h5>
+                <ul type="none" style="list-style-type:none; ">
+                    <li><i class="fas fa-map-marker-alt"></i><span> Al-Salt - Amman Al-A'hliya University</span>
+                    </li>
+                    <li><i class="fab fa-whatsapp"></i><span> 0775085550</span></li>
+                    <li><i class="fas fa-envelope"></i><span> alnajdawi.est@yahoo.com</span></li>
+                    <li><i class="fas fa-phone"></i><span> 0775085550</span></li>
+                    <li><i class="fab fa-facebook"></i> النجداوي للبرمجيات والخدمات الطلابية</span></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-12">
+                <!--<div id="googleMap"></div>-->
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Elements -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center p-5">
+        <h5>© 2019 Copyright: <a href="#"> NajdawiSoftware.com</a></h5>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX_Aj0e1MfUN0cZbxO79pKI56a6ZUWJPA&callback=initMap"></script>
+{% endblock %}

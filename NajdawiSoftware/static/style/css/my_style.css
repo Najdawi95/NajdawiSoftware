@@ -1,0 +1,48 @@
+body {
+    background-image: url('../../images/bg_subtle_dots.png ');
+    font-family: "Raleway", sans-serif
+}
+
+/*.navbar-dark{*/
+/*border-color: white;*/
+/*}*/
+.content {
+    margin-top: 50px;
+}
+
+.mySlides {
+    display: none
+}
+
+#wwd-h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.wwd-row {
+    margin-top: 25px;
+}
+
+#about-h1, #about-p {
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.service-icon:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+/*#googleMap{*/
+/*width:100%;*/
+/*height:400px;*/
+/*}*/
+
+#map {
+    width: 100%;
+    height: 400px;
+}
